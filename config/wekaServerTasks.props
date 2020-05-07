@@ -1,0 +1,2 @@
+weka.server.WekaServerTaskPool=[ScoringTask]weka.server.scorer.WekaScoringModelPool
+

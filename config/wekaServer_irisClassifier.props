@@ -1,0 +1,21 @@
+# Output debugging info (such as json converted to ARFF,
+# transformed data, etc.)
+# weka.server.task.debug=true
+
+# Once required packages are installed, we no longer need to talk to the
+# repository
+weka.packageManager.offline=true
+
+# The task type that the server should execute
+weka.server.task.type=ScoringTask
+
+# Input data preparation class to use. If ommitted, defaults to the
+# DefaultJsonDataPreparer, which directly converts pandas-split to
+# Weka Instances without any further transformation.
+# weka.server.scorer.data.preparer=
+
+# Optional command line options for CSV conversion
+# weka.server.scorer.data.preparer.csvOpts=-B 1000 -S last
+
+# Model file to load from ${user.home}/models
+weka.server.scorer.model.filename=j48_iris.model
